@@ -1,2 +1,128 @@
+/* public */
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
+@font-face {
+    font-family: Metrophobic;
+    src: url(../Metrophobic/Metrophobic-Regular.ttf);
+}
+
+:root {
+    --main-color: #0061f2;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.capital {
+    text-transform: uppercase;
+}
+
+body {
+    font-family: Metrophobic;
+}
+
+/* end public */
+
+/* nav */
+.nav {
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    background-color: white;
+}
+
+.nav .logo {
+    width: 20%;
+}
+
+.nav .logo a {
+    font-size: 18px;
+    color: rgb(85, 26, 139);
+    font-weight: bold;
+}
+
+.nav .list-item {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav .list-item .item {
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.nav .list-item .item a {
+    color: #0000008c;
+}
+
+.nav .list-item .item:hover .fa-solid {
+    transform: translateX(-5px);
+}
+
+.fa-solid {
+    font-size: 12px;
+    margin-right: 5px;
+    transition: all 0.8s;
+}
+
+.nav .list-item .item {
+    position: relative;
+}
+
+.nav .list-item .item .dropDown {
+    position: absolute;
+    top: 50px;
+    width: 77px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: -10px 0px 2px #e8e2e2;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.nav .list-item .item:hover .dropDown {
+    opacity: 1;
+    top: 25px;
+}
+
+.button {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 9px;
+    padding: 13px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.button:hover {
+    background-color: blue;
+    border: 1px solid blue;
+}
+
+/* end navbar */
